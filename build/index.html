@@ -74,8 +74,8 @@
                   >Home</a
                 >
               </li>
-              <li><a href="index.html#team" class="xl">Our Team</a></li>
-              <li><a href="index.html#services" class="xl">Services</a></li>
+              <li><a href="#" onclick="scrollToSection('team')">Our Team</a></li>
+              <li><a href="#" onclick="scrollToSection('services')">Services</a></li>
               <!-- <li class="c i" x-data="{ dropdown: false }"> -->
                 <!-- <a
               href="#"
@@ -1991,6 +1991,15 @@
           ],
         };
       };
+
+
+      function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+
     </script>
     <script defer src="bundle.js"></script>
   </body>
