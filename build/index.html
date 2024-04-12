@@ -8,6 +8,7 @@
     <link rel="icon" href="rfsfavicon.png" />
     <link href="style.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/twe.js"></script>
   </head>
   <body
     x-data="{ page: 'home', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
@@ -75,7 +76,7 @@
                   >Home</a
                 >
               </li>
-              <li><a href="index.html#KABARO" class="xl">Our Team</a></li>
+              <li><a class='xl' href='/#KABARO'>Features</a></li>
               <li><a href="index.html#services" class="xl">Services</a></li>
               <!-- <li class="c i" x-data="{ dropdown: false }"> -->
                 <!-- <a
@@ -307,7 +308,7 @@
           <div class="tc wf gg qq">
     
             <!-- About  -->
-            <div class="flex flex-row mt-10 pt-10 line-height-8">
+            <div class="flex flex-row mt-10 mb-32 pt-10 line-height-8">
               <div class="mx-10 my-10">
                 <div class="tc _o">
                   <div class="animate_left jn/2">
@@ -426,164 +427,48 @@
         </div>
     </section>
     
+  
+
+
+
+    <!-- <div class="max-w-5xl  mx-auto">
     
-    <div
-    id="carouselExampleCaptions"
-    class="relative"
-    data-twe-carousel-init
-    data-twe-carousel-slide>
-    <div
-      class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-      data-twe-carousel-indicators>
-      <button
-        type="button"
-        data-twe-target="#carouselExampleCaptions"
-        data-twe-slide-to="0"
-        data-twe-carousel-active
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-current="true"
-        aria-label="Slide 1"></button>
-      <button
-        type="button"
-        data-twe-target="#carouselExampleCaptions"
-        data-twe-slide-to="1"
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-label="Slide 2"></button>
-      <button
-        type="button"
-        data-twe-target="#carouselExampleCaptions"
-        data-twe-slide-to="2"
-        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-        aria-label="Slide 3"></button>
-    </div>
-    <div
-      class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-twe-carousel-active
-        data-twe-carousel-item
-        style="backface-visibility: hidden">
-        <div
-          class="relative overflow-hidden bg-cover bg-no-repeat"
-          style="background-position: 50%">
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(123).jpg"
-            class="block w-full" />
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
-        </div>
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">First slide label</h5>
-          <p>
-            Some representative placeholder content for the first slide.
-          </p>
-        </div>
-      </div>
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-twe-carousel-item
-        style="backface-visibility: hidden">
-        <div
-          class="relative overflow-hidden bg-cover bg-no-repeat"
-          style="background-position: 50%">
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(124).jpg"
-            class="block w-full" />
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
-        </div>
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Second slide label</h5>
-          <p>
-            Some representative placeholder content for the second slide.
-          </p>
-        </div>
-      </div>
-      <div
-        class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-        data-twe-carousel-item
-        style="backface-visibility: hidden">
-        <div
-          class="relative overflow-hidden bg-cover bg-no-repeat"
-          style="background-position: 50%">
-          <img
-            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(125).jpg"
-            class="block w-full" />
-          <div
-            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50"></div>
-        </div>
-        <div
-          class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
-          <h5 class="text-xl">Third slide label</h5>
-          <p>
-            Some representative placeholder content for the third slide.
-          </p>
-        </div>
-      </div>
-    </div>
-    <button
-      class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-twe-target="#carouselExampleCaptions"
-      data-twe-slide="prev">
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Previous</span
-      >
-    </button>
-    <button
-      class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-      type="button"
-      data-twe-target="#carouselExampleCaptions"
-      data-twe-slide="next">
-      <span class="inline-block h-8 w-8">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="h-6 w-6">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </span>
-      <span
-        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-        >Next</span
-      >
-    </button>
-  </div>
-      
-
-
-
-
-
-
-
-
-      
+      <div id="custom-carousel" class="relative rounded-lg overflow-hidden shadow-lg" data-carousel="static">
+     
+          <div class="relative h-96 md:h-128" data-carousel-inner>
         
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="images/siratoandjhun.png" class="object-contain md:object-cover w-full h-full" alt="Slide 1">
+                  <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-xl font-semibold text-white md:text-2xl dark:text-gray-800"></span>
+              </div>
+          
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" class="object-cover w-full h-full" alt="Slide 2">
+              </div>
+        
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" class="object-cover w-full h-full" alt="Slide 3">
+              </div>
+          </div>
+          
+          <button type="button" class="flex absolute top-1/2 left-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition" data-carousel-prev>
+              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+          </button>
+          <button type="button" class="flex absolute top-1/2 right-3 z-40 items-center justify-center w-10 h-10 bg-gray-200/50 rounded-full hover:bg-gray-300 focus:outline-none transition" data-carousel-next>
+              <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+          </button>
+      </div>
+    
 
+  
+  </div>
+
+  
+  <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script> -->
           <!-- ===== Mission and Vission End ===== -->
     
          
@@ -1218,9 +1103,7 @@
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-07.svg" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Website / Sytem Development and Website Hosting</h4>
-              <p>
-                Empower Your Digital Presence with Our Tailored Website and System Development Solutions. Elevate Performance and Security with Our Reliable Website Hosting Services.
-              </p>
+             
             </div>
 
             <!-- Service Item -->
@@ -1316,6 +1199,127 @@
       </section>
 
       <!-- === Image Gallery End ===  -->
+
+
+      <!-- #### RFS FOR EDUCATION START #### -->
+      <section id="services" class="lj tp kr mt-10 pt-10 line-height-8">
+        <!-- Section Title Start -->
+        <div 
+          x-data="{ sectionTitle: `Courses We Offer in RFS Education`, sectionTitleText: `.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          
+        <!-- Section Title End -->
+      
+       
+            <!-- Service Item -->
+            <!-- <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-04.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Crafted for Startups</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                convallis tortor.
+              </p>
+            </div> -->
+      
+            <!-- Service Item -->
+            <!-- <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">High-quality Design</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                convallis tortor.
+              </p>
+            </div> -->
+      
+            <!-- Service Item -->
+            <!-- <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">All Essential Sections</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                convallis tortor.
+              </p>
+            </div> -->
+      
+            <!-- Service Item -->
+
+
+            <div class="grid grid-cols-1 gap-1 md:grid-cols-3">
+              <!-- Course 1 -->
+              <div class="mx-auto max-w-md overflow-hidden rounded-xl shadow-md white:bg-gray-800 flex flex-col justify-between">
+                <div class="md:flex-shrink-0">
+                  <img class="h-full w-full object-cover md:h-auto md:w-auto" src="images/sirtutoy.png" alt="Course Image 1" />
+
+                </div>
+                <div class="p-8">
+                  <div>
+                    <div class="text-sm font-semibold uppercase tracking-wide text-yellow-500 dark:text-yellow-400">Cloud Computing Fundamentals</div>
+                    <!-- <a href="#" class="mt-1 block text-lg font-medium leading-tight text-black hover:underline dark:text-white">Course Name 1</a> -->
+                    <p class="mt-2 text-gray-600 dark:text-gray-400">Dive into the core concepts and principles of cloud computing. Learn about different cloud service models, deployment models, and key providers.</p>
+                  </div>
+                  <div class="mt-auto">
+                    <span class="mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#CloudComputing</span>
+                    <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#AWS</span>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Course 2 -->
+              <div class="mx-auto max-w-md overflow-hidden rounded-xl shadow-md white:bg-gray-800 flex flex-col justify-between">
+                <div class="md:flex-shrink-0">
+                  <img class="h-48 w-full object-cover md:h-full md:w-48" src="course2_image_url" alt="Course Image 2" />
+                </div>
+                <div class="p-8">
+                  <div>
+                    <div class="text-sm font-semibold uppercase tracking-wide text-yellow-500 dark:text-yello-400">Visual Graphic Design Essentials</div>
+                    <!-- <a href="#" class="mt-1 block text-lg font-medium leading-tight text-black hover:underline dark:text-white">Course Name 2</a> -->
+                    <p class="mt-2 text-gray-600 dark:text-gray-400">Explore the principles of visual design and develop essential skills in graphic design. Learn about color theory, typography, layout, and composition.</p>
+                  </div>
+                  <div class="mt-auto">
+                    <span class="mr-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#GraphicDesign</span>
+                    <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#Adobe Photoshop</span>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Course 3 -->
+              <div class="mx-auto max-w-md overflow-hidden rounded-xl  shadow-md white:bg-gray-800 flex flex-col justify-between">
+                <div class="md:flex-shrink-0">
+                  <img class="h-48 w-full object-cover md:h-full md:w-48" src="course3_image_url" alt="Course Image 3" />
+                </div>
+                <div class="p-8">
+                  <div>
+                    <div class="text-sm font-semibold uppercase tracking-wide text-yellow-500 dark:text-yellow-400">Web Design with Tailwind CSS</div>
+                    <!-- <a href="#" class="mt-1 block text-lg font-medium leading-tight text-black hover:underline dark:text-white">Course Name 3</a> -->
+                    <p class="mt-2 text-gray-600 dark:text-gray-400">Master the art of web design using Tailwind CSS. Learn
+                    </div>
+                    <div class="mt-auto">
+                      <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#HTML</span>
+                      <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#CSS</span>
+                      <span class="inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700 dark:bg-gray-700 dark:text-gray-200">#TailwindCSS</span>
+                    </div>
+                  </div>
+                </div>    
+                    
+                 
+            
+              </div>
+             </div>
+           </div>
+      
+      </section>
+            
+
+
+      <!-- #### RFS FOR EDUCATION END #### -->
+
+
 
 
 <!-- ===== Services Start ===== -->
